@@ -1,0 +1,18 @@
+services:
+  nuvirahub:
+    image: ghcr.io/nuvira-hub/nuvira-server:0.99.1
+    restart: unless-stopped
+    # The apps on the computers connect on 21116: UDP here, TCP through the
+    # app port (WebSocket fallback, update files and the status page).
+    ports:
+      - 21116:21116/udp
+    # Runtipi creates this folder from data/ and makes it writable for the
+    # server, which runs as a non-root user (65532).
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    x-runtipi:
+      is_main: true
+      internal_port: 21116
+
+x-runtipi:
+  schema_version: 2
