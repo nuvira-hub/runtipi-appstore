@@ -1,6 +1,6 @@
 services:
   nuvirahub:
-    image: ghcr.io/nuvira-hub/nuvira-server:0.99.1
+    image: ghcr.io/nuvira-hub/nuvira-server:0.99.2
     restart: unless-stopped
     # The apps on the computers connect on 21116: UDP here, TCP through the
     # app port (WebSocket fallback, update files and the status page).

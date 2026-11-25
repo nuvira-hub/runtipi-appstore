@@ -8,8 +8,8 @@
   "port": 21116,
   "categories": ["network", "utilities"],
   "description": "NuviraHub is an open-source remote desktop app for Windows, macOS and Linux. This app runs your own NuviraHub server: the apps on your computers sign in to it to find each other, connect directly when they can, and relay the session through it when they cannot. No account is needed.",
-  "tipi_version": 1,
-  "version": "0.99.1",
+  "tipi_version": 2,
+  "version": "0.99.2",
   "source": "https://github.com/nuvira-hub/nuvira",
   "website": "https://nuvirahub.dev",
   "exposable": false,
@@ -17,5 +17,5 @@
   "dynamic_config": true,
   "form_fields": [],
   "created_at": 1795620038918,
-  "updated_at": 1795620038918
+  "updated_at": 1795631243044
 }
